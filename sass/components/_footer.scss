@@ -48,9 +48,15 @@
 
 .info {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
 }
 .social {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+  }
 }
 .social > p {
   color: $primary-white-color;
@@ -61,12 +67,22 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 footer .social-links {
   margin: auto;
 
   & a {
     fill: $primary-white-color;
+  }
+}
+.footer-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 

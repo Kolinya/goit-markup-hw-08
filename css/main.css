@@ -1308,8 +1308,20 @@ body.modal-open {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .info {
+    margin-left: 76px;
+  }
+}
+
 .social {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    margin-right: 89px;
+  }
 }
 
 .social > p {
@@ -1323,12 +1335,32 @@ body.modal-open {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .social > p {
+    margin-top: 0px;
+  }
+}
+
 footer .social-links {
   margin: auto;
 }
 
 footer .social-links a {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .form {
