@@ -378,6 +378,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -672,7 +676,7 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   width: 100%;
   max-width: 450px;
