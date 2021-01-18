@@ -1196,19 +1196,12 @@ body.modal-open {
 
 .clients-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-@media screen and (min-width: 768px) {
-  .clients-title {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
 }
 
 .clients-container {
