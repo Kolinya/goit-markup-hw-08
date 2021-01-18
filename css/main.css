@@ -1301,10 +1301,10 @@ footer .social-links a {
 }
 
 .form-input {
-  display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
