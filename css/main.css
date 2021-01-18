@@ -387,7 +387,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
