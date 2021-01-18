@@ -1,0 +1,50 @@
+.flex {
+  // display: flex;
+  &.items {
+    margin-right: 30px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.cards {
+  margin-right: 30px;
+}
+.card-overlay {
+  // display: flex;
+  position: relative;
+
+  & > h3 {
+    content: "";
+    // display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.activi {
+  display: none;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 94px;
+  }
+}
+.activitis {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-title-color;
+}

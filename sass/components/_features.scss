@@ -1,0 +1,59 @@
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-flex &-block {
+    // margin-right: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 120px;
+      margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+    }
+
+    &.icon-antenna::before {
+      background-image: url(../icons/antenna1.svg);
+    }
+    &.icon-clock::before {
+      background-image: url(../icons/clock1.svg);
+    }
+    &.icon-diagram::before {
+      background-image: url(../icons/diagram1.svg);
+    }
+    &.icon-astronaut::before {
+      background-image: url(../icons/astronaut1.svg);
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &-title {
+    min-width: 270px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-title-color;
+    text-align: center;
+  }
+  &-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
