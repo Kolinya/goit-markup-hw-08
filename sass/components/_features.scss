@@ -2,9 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &-flex &-block {
+  &-block {
     // margin-right: 30px;
-
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 2);
+    }
     &::before {
       content: "";
       display: block;
@@ -55,5 +57,12 @@
     &:last-child {
       margin-right: 0px;
     }
+  }
+}
+.features-flex {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

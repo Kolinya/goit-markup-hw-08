@@ -1,10 +1,10 @@
 .header {
-  border-bottom: 1px solid #ececec;
   position: relative;
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #ececec;
   }
 }
 .web {
@@ -47,8 +47,11 @@
   width: 100%;
   border-bottom: 1px solid;
   background-color: $primary-white-color;
-  // display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: static;
+  }
   &.is-open {
     display: block;
   }
@@ -75,10 +78,16 @@
   align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+    margin: 0;
+  }
 }
 .link {
-  // padding-bottom: 32px;
-  // padding-top: 32px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
 
   &-opened {
     font-weight: 500;
@@ -104,6 +113,9 @@
 .item {
   position: relative;
   margin-bottom: 48px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 0px;
+  }
   &:last-child {
     margin-bottom: 0px;
   }
@@ -122,6 +134,9 @@
     margin-bottom: 60px;
     margin-left: auto;
     align-items: center;
+    @media screen and(min-width:768px) {
+      margin-bottom: 0px;
+    }
   }
   & .link {
     // display: flex;
