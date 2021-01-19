@@ -474,7 +474,9 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .nav-list {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: static;
   }
 }
@@ -489,6 +491,12 @@ body.modal-open {
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list .link {
+    font-size: 14px;
+  }
 }
 
 .nav-list .link:hover, .nav-list .link:focus {
@@ -537,6 +545,12 @@ body.modal-open {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .link-opened {
+    font-size: 14px;
+  }
 }
 
 .link-opened::after {
@@ -603,6 +617,12 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .link {
+    font-size: 12px;
+  }
 }
 
 .contacts a:hover {
@@ -1185,7 +1205,13 @@ body.modal-open {
 }
 
 .team-container .items {
-  margin: 15px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-container .items {
+    margin: 15px;
+  }
 }
 
 .clients {
