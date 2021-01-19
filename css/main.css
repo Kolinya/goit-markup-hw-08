@@ -424,6 +424,12 @@ body.modal-open {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .header-container {
+    min-height: 80px;
+  }
+}
+
 .web {
   display: inline-block;
   color: #2196f3;
@@ -467,9 +473,7 @@ body.modal-open {
   width: 100%;
   border-bottom: 1px solid;
   background-color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -478,6 +482,8 @@ body.modal-open {
     display: -ms-flexbox;
     display: flex;
     position: static;
+    width: auto;
+    border-bottom: 0px;
   }
 }
 
@@ -529,13 +535,7 @@ body.modal-open {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .link {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    margin-left: 88px;
   }
 }
 
@@ -572,6 +572,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .item {
     margin-bottom: 0px;
+    margin-right: 50px;
   }
 }
 
@@ -579,8 +580,14 @@ body.modal-open {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .item:last-child {
+    margin-right: 0px;
+  }
+}
+
 .contacts {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .contacts:last-child {
@@ -605,6 +612,10 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .contacts-nav {
     margin-bottom: 0px;
+    margin-left: 84px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -622,6 +633,9 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .contacts .link {
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -629,9 +643,18 @@ body.modal-open {
   color: #2196f3;
 }
 
-.contact {
-  margin-right: 10px;
+.contact-tel {
+  margin-right: 8px;
   fill: currentColor;
+  width: 10;
+  height: 16px;
+}
+
+.contact-phone {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 10;
+  height: 16px;
 }
 
 .menu-button {
