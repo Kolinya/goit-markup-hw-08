@@ -20,7 +20,7 @@
     }
   }
 }
-.social-links li {
+.social-links li:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -40,7 +40,7 @@
   }
   &-container {
     align-items: center;
-
+    margin: -15px;
     @media screen and(min-width:768px) {
       display: flex;
       flex-wrap: wrap;

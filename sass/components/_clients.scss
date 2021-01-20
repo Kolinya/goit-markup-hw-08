@@ -15,6 +15,7 @@
   &-container {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   &-card {
     width: calc((100% - 60px) / 2);

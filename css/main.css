@@ -484,6 +484,7 @@ body.modal-open {
     position: static;
     width: auto;
     border-bottom: 0px;
+    z-index: 0;
   }
 }
 
@@ -562,6 +563,12 @@ body.modal-open {
   bottom: -8px;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .link-opened::after {
+    bottom: -32px;
+  }
 }
 
 .item {
@@ -760,8 +767,8 @@ body.modal-open {
   width: 100%;
   max-width: 450px;
   padding: 40px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1148,7 +1155,7 @@ body.modal-open {
   background-color: #2196f3;
 }
 
-.social-links li {
+.social-links li:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1172,6 +1179,7 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1258,6 +1266,7 @@ body.modal-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients-card {
@@ -1553,6 +1562,7 @@ footer .social-links a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 
 .button-list {
@@ -1605,13 +1615,15 @@ footer .social-links a {
 }
 
 .project-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 450px;
+  margin: 15px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-cards {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .project-cards a:hover,
@@ -1626,10 +1638,6 @@ footer .social-links a {
 .project-cards a:focus .hiden {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.project-cards:nth-child(3n) {
-  margin-right: 0px;
 }
 
 .project-cards:nth-last-child(-n + 3) {
