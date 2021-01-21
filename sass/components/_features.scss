@@ -1,11 +1,16 @@
 .features {
+  margin: -15px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   &-block {
+    margin: 15px;
     // margin-right: 30px;
     @media screen and (min-width: 768px) {
       width: calc((100% - 60px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
     }
     &::before {
       content: "";
@@ -29,10 +34,6 @@
     }
     &.icon-astronaut::before {
       background-image: url(../icons/astronaut1.svg);
-    }
-
-    &:last-child {
-      margin-right: 0px;
     }
   }
 

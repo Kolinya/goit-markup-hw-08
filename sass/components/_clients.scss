@@ -27,6 +27,9 @@
     @media screen and(min-width:768px) {
       width: calc((100% - 90px) / 3);
     }
+    @media screen and(min-width:1200px) {
+      width: calc((100% - 180px) / 6);
+    }
   }
 
   &-card a:hover,
