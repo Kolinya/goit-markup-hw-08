@@ -1064,7 +1064,6 @@ img {
 }
 
 .features {
-  margin: -15px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1113,7 +1112,6 @@ img {
 }
 
 .features-title {
-  min-width: 270px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
