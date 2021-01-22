@@ -140,7 +140,7 @@
 }
 
 .contacts {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   // margin-right: 50px;
 
   &:last-child {
@@ -177,19 +177,21 @@
   }
 }
 .contact-tel {
-  margin-right: 8px;
+  margin-right: 10px;
   fill: currentColor;
-  width: 10;
-  height: 16px;
+  width: 16px;
+  height: 12px;
   @media screen and(min-width:768px) {
   }
 }
 .contact-phone {
   margin-right: 8px;
   fill: currentColor;
-  width: 10;
+  width: 10px;
   height: 16px;
   @media screen and(min-width:768px) {
+    width: 10px;
+    height: 14px;
   }
 }
 

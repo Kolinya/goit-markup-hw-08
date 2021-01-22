@@ -598,7 +598,7 @@ img {
 }
 
 .contacts {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .contacts:last-child {
@@ -655,17 +655,24 @@ img {
 }
 
 .contact-tel {
-  margin-right: 8px;
+  margin-right: 10px;
   fill: currentColor;
-  width: 10;
-  height: 16px;
+  width: 16px;
+  height: 12px;
 }
 
 .contact-phone {
   margin-right: 8px;
   fill: currentColor;
-  width: 10;
+  width: 10px;
   height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .menu-button {
@@ -1263,6 +1270,13 @@ img {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team-title {
   margin-bottom: 30px;
   text-align: center;
@@ -1271,6 +1285,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+  }
 }
 
 .team-container {
@@ -1355,6 +1375,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients-title {
   text-align: center;
   margin-bottom: 30px;
@@ -1363,6 +1390,13 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-container {

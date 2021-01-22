@@ -28,7 +28,10 @@
   background: $secondary-background;
   padding-bottom: 60px;
   padding-top: 60px;
-
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &-title {
     margin-bottom: 30px;
     text-align: center;
@@ -37,6 +40,9 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: $primary-title-color;
+    @media screen and(min-width:1200px) {
+      font-size: 36px;
+    }
   }
 
   &-container {
