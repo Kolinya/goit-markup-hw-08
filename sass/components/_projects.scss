@@ -1,8 +1,15 @@
 .button-flex {
   display: flex;
   flex-wrap: wrap;
+  height: 91px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    height: 38px;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 .projects {
@@ -16,13 +23,17 @@
       flex-wrap: wrap;
     }
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .button-list {
   display: block;
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-bottom: 15px;
+
   margin-right: 8px;
 
   background-color: #f5f4fa;

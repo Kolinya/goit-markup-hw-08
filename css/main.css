@@ -1823,6 +1823,8 @@ footer .social-links a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 91px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1830,6 +1832,14 @@ footer .social-links a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 38px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-flex {
+    margin-bottom: 50px;
   }
 }
 
@@ -1852,12 +1862,18 @@ footer .social-links a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .button-list {
   display: block;
   border: 0px;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-bottom: 15px;
   margin-right: 8px;
   background-color: #f5f4fa;
   font-family: "Roboto", sans-serif;
