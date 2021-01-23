@@ -1214,12 +1214,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .features-title {
-    text-align: start;
-  }
-}
-
 .features-text {
   font-size: 14px;
   font-weight: 400;
