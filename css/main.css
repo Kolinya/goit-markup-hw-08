@@ -1208,6 +1208,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .features-title {
+    text-align: start;
+  }
+}
+
 .features-text {
   font-size: 14px;
   font-weight: 400;
@@ -1839,7 +1845,7 @@ footer .social-links a {
         -ms-flex-pack: center;
             justify-content: center;
     height: 38px;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 
